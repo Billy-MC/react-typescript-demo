@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import { Greet } from './components/Greet';
+// import { Person } from './components/Person';
+// import { PersonList } from './components/PersonList';
+// import { Status } from './components/Status';
+// import { Heading } from './components/Heading';
+// import { Oscar } from './components/Oscar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// const personName = {
+	// 	first: 'Billy',
+	// 	last: 'Chui',
+	// };
+
+	// const nameList = [
+	// 	{
+	// 		first: 'Billy',
+	// 		last: 'Chui',
+	// 	},
+	// 	{
+	// 		first: 'Yanmi',
+	// 		last: 'Lau',
+	// 	},
+	// 	{
+	// 		first: 'MinJu',
+	// 		last: 'Kim',
+	// 	},
+	// 	{
+	// 		first: 'Sakura',
+	// 		last: 'Miyawaki',
+	// 	},
+	// ];
+
+	return (
+		<div className='App'>
+			{/* <Greet name='Yanmi' messageCount={20} isLoggedIn={true} />
+			<Person name={personName} />
+			<PersonList names={nameList} />
+			<Status status='loading' />
+			<Heading> Placeholer Text </Heading>
+			<Oscar>
+				<Heading>Oscar goes to Leonardo Dicpario</Heading>
+			</Oscar> */}
+		</div>
+	);
 }
 
 export default App;
