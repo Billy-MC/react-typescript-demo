@@ -1,4 +1,5 @@
 import './App.css';
+// import { Counter } from './components/class/Counter';
 // import { Greet } from './components/Greet';
 // import { Person } from './components/Person';
 // import { PersonList } from './components/PersonList';
@@ -7,7 +8,15 @@ import './App.css';
 // import { Oscar } from './components/Oscar';
 // import { Button } from './components/Button';
 // import { Input } from './components/Input';
-import { Container } from './components/Container';
+// import { Container } from './components/Container';
+// import { ThemeContextProvider } from './components/context/ThemeContext';
+// import { Box } from './components/context/Box';
+// import { User } from './components/context/User';
+// import { UserContextProvider } from './components/context/UserContext';
+// import { Private } from './components/auth/Private';
+// import { Profile } from './components/auth/Profile';
+// import { List } from './components/generics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 function App() {
 	// const personName = {
@@ -43,15 +52,44 @@ function App() {
 			<Heading> Placeholer Text </Heading>
 			<Oscar>
 				<Heading>Oscar goes to Leonardo Dicpario</Heading>
-			</Oscar> */}
+			</Oscar>  */}
 
 			{/* <Button
 				handleClick={(event, id) => {
 					console.log('Button clicked', event, id);
 				}}
-			/>
-			<Input value='' handleChange={event => console.log(event)} /> */}
-			<Container styles={{ color: 'blue', border: '3px solid black', padding: '1rem' }} />
+			/> */}
+
+			{/* <Input value='' handleChange={event => console.log(event)} /> */}
+
+			{/* <Container styles={{ color: 'blue', border: '3px solid black', padding: '1rem' }} /> */}
+			{/* step 3 useContext, wrap the box component with the provider */}
+			{/* <ThemeContextProvider>
+				<Box />
+			</ThemeContextProvider> */}
+			{/* <UserContextProvider>
+				<User />
+			</UserContextProvider> */}
+			{/* <Counter message='The Count value is' /> */}
+			{/* <Private isLoggedIn={true} component={Profile} /> */}
+			{/* <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={item => console.log(item)} />
+			<List items={[1, 2, 3]} onClick={item => console.log(item)} /> */}
+			{/* <List
+				items={[
+					{
+						id: 123,
+						first: 'Billy',
+						last: 'Chui',
+					},
+					{
+						id: 345,
+						first: 'Yanmi',
+						last: 'Lau',
+					},
+				]}
+				onClick={item => console.log(item)}
+			/> */}
+			<RandomNumber value={10} isPositive />
 		</div>
 	);
 }
