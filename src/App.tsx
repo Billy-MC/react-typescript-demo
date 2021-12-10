@@ -94,6 +94,8 @@ function App() {
 			{/* <RandomNumber value={10} isPositive /> */}
 			{/* <Toast position='left-top' /> */}
 			<CustomButton variant='primary' onClick={() => console.log('Clicked')}>
+				{/* <div>Primary Button</div> */}
+				{/* 因為restricted the type of children just String */}
 				Primary Button
 			</CustomButton>
 		</div>
